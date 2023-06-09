@@ -1,7 +1,13 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class DiceGame {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What is your name? ");
+        String name = scanner.nextLine();
+        System.out.println("Hello, " + name + "!");
+        
         System.out.println("Rolling dice...");
         int die1 = rollDice();
         int die2 = rollDice();
@@ -12,7 +18,7 @@ public class DiceGame {
         System.out.println("Total value: " + total);
 
         if (total > 7) {
-            System.out.println("You won!");
+            System.out.println(name + " won!");
         }
     }
 
