@@ -20,6 +20,9 @@ public class DiceGame {
         if (total > 7) {
             System.out.println(name + " won!");
         }
+        else{
+            System.out.println(name + " lost!");
+        }
     }
 
     
